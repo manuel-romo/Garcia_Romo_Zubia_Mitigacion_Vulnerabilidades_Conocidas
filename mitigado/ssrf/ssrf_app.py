@@ -52,7 +52,3 @@ def verificar_stock():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-
-
-# curl localhost:5000/verificar-stock?producto_id=42
-# curl localhost:5000/verificar-stock?servicio=http://127.0.0.1:6000/admin/panel
