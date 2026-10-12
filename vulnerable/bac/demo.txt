@@ -1,0 +1,5 @@
+# Instalación de Flask para ejecutar los archivos
+pip install Flask
+
+# Ejecución de script
+python bac_vulnerable_roles.py
