@@ -2,13 +2,13 @@
 pip install Flask
 
 # Levantamiento de servicio interno
-python servicio_interno.py
+python ssrf_servicio_interno.py
 
-# Levantamiento de app pública vulnerable
-python app_vulnerable.py
+# Levantamiento de app pública segura
+python ssrf_app.py
 
 # Uso legítimo
 curl "http://localhost:5000/verificar-stock?servicio=http://127.0.0.1:6000/stock/42"
 
 # Exploit con destino a panel de administración
-curl "http://localhost:5000/verificar-stock?servicio=http://127.0.0.1:6000/admin/pane"
+curl "http://localhost:5000/verificar-stock?servicio=http://127.0.0.1:6000/admin/panel"
